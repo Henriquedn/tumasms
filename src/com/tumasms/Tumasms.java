@@ -53,7 +53,7 @@ public class Tumasms {
 			try {
 				HttpPost post = new HttpPost(this.base_url + "send_sms");
 
-				List<NameValuePair> nameValuePairs = new ArrayList<>(1);
+				List<NameValuePair> nameValuePairs = new ArrayList<>();
 				nameValuePairs.add(new BasicNameValuePair("api_key", this.api_key));
 				nameValuePairs.add(new BasicNameValuePair("api_signature", this.api_signature));
 				nameValuePairs.add(new BasicNameValuePair("messages", sms));
